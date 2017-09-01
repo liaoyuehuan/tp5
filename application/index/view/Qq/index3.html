@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" 
+src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js"  data-callback="true" charset="utf-8"></script>
+</head>
+<body>
+<script type="text/javascript">
+    QC.api('get_user_info', {}).success(function(s){
+    	//成功回调，通过s.data获取OpenAPI的返回数据
+		alert("获取用户信息成功！当前用户昵称为："+s.data.nickname);
+    });
+</script>
+</body>
+</html>
